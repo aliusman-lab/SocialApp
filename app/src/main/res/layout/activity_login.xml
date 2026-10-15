@@ -1,150 +1,118 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:background="#000000"
-    android:orientation="vertical">
+    android:padding="24dp">
 
-    <ScrollView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOCIAL APP"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/etLoginUser"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:fillViewport="true">
+        android:layout_height="50dp"
+        android:hint="Username or Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="15dp"
+        android:layout_marginBottom="15dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:paddingHorizontal="32dp"
-            android:paddingTop="100dp"
-            android:paddingBottom="24dp">
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="15dp"
+        android:layout_marginBottom="20dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
-                android:letterSpacing="0.2"
-                android:text="SOCIAL APP"
-                android:textColor="#FFFFFF"
-                android:textSize="34sp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button"
+        android:textColor="#FFFFFF" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="64dp"
-                android:gravity="center"
-                android:letterSpacing="0.15"
-                android:text="LOG IN TO SEE PHOTOS AND VIDEOS FROM YOUR FRIENDS"
-                android:textColor="#9A9A9A"
-                android:textSize="11sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot login details?"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="18dp" />
 
-            <EditText
-                android:id="@+id/etLoginUser"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:background="@drawable/bg_input"
-                android:hint="USERNAME"
-                android:inputType="textEmailAddress"
-                android:letterSpacing="0.1"
-                android:paddingHorizontal="16dp"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#8A8A8A"
-                android:textSize="13sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#AAAAAA"
+        android:textSize="13sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp" />
 
-            <EditText
-                android:id="@+id/etLoginPassword"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/bg_input"
-                android:hint="PASSWORD"
-                android:inputType="textPassword"
-                android:letterSpacing="0.1"
-                android:paddingHorizontal="16dp"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#8A8A8A"
-                android:textSize="13sp" />
+    <Button
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Continue with Google"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_social"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
 
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/bg_button"
-                android:backgroundTint="@null"
-                android:letterSpacing="0.15"
-                android:text="LOG IN"
-                android:textColor="#FFFFFF"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:letterSpacing="0.08"
-                android:text="Forgot your login details? Get help signing in."
-                android:textColor="#9A9A9A"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="24dp"
-                android:letterSpacing="0.1"
-                android:text="OR"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/btnGoogleLogin"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:background="@drawable/bg_social"
-                android:backgroundTint="@null"
-                android:letterSpacing="0.15"
-                android:text="LOG IN WITH GOOGLE"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/btnFacebookLogin"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/bg_social"
-                android:backgroundTint="@null"
-                android:letterSpacing="0.15"
-                android:text="LOG IN WITH FACEBOOK"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/btnFacebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Continue with Facebook"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_social"
+        android:textColor="#FFFFFF" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#111111"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_marginTop="auto">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:letterSpacing="0.08"
             android:text="Don't have an account? "
-            android:textColor="#9A9A9A"
-            android:textSize="13sp" />
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvGoSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:letterSpacing="0.08"
             android:text="Sign Up"
             android:textColor="#FFFFFF"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+
     </LinearLayout>
+
 </LinearLayout>
