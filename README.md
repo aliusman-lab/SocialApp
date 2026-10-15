@@ -1,37 +1,148 @@
-# SocialApp
+# \# SocialApp — Android Application
 
-A simple Android social app UI built with Java in Android Studio. It has a splash screen, a login page and a signup page, all in a black and white futuristic style inspired by Instagram.
+# 
 
-## Features
+# A simple social media application built with \*\*Java and XML\*\* in Android Studio. The project focuses on creating a clean user interface and implementing basic user navigation.
 
-- Splash screen that opens the login page automatically
-- Login page with username and password
-- Signup page with email, full name, username and password
-- Google and Facebook options on both pages (UI only)
-- Switch between login and signup with one tap
+# 
 
-## Screens
+# \## ✨ Features
 
-| Activity | Purpose |
-|----------|---------|
-| MainActivity | Splash screen |
-| LoginActivity | Login page |
-| SignupActivity | Signup page |
+# 
 
-## Tech Stack
+# \- \*\*Login Screen\*\* — Username/email and password fields.
 
-- Java
-- Android Studio
-- XML layouts
-- Material Components
+# \- \*\*Sign Up Navigation\*\* — Navigate from the login screen to the registration screen.
 
-## Run the Project
+# \- \*\*Social Login UI\*\* — Google and Facebook login buttons.
 
-1. Clone the repo
-2. Open it in Android Studio
-3. Let Gradle sync finish
-4. Run on an emulator or a real device
+# \- \*\*Clean UI\*\* — A dark-themed interface with simple and modern styling.
 
-## Note
+# \- \*\*Android Native Development\*\* — Built using Java and XML layouts.
 
-Login and signup buttons are UI only. There is no backend or authentication yet.
+# 
+
+# \## 🛠️ Tech Stack
+
+# 
+
+# \- \*\*Language:\*\* Java
+
+# \- \*\*UI Design:\*\* XML
+
+# \- \*\*IDE:\*\* Android Studio
+
+# \- \*\*Platform:\*\* Android
+
+# \- \*\*Version Control:\*\* Git \& GitHub
+
+# 
+
+# \## 📱 Screens
+
+# 
+
+# \- Login Screen
+
+# \- Sign Up Screen
+
+# \- Splash Screen
+
+# 
+
+# \## 🚀 Getting Started
+
+# 
+
+# 1\. Clone this repository:
+
+# 
+
+# &#x20;  ```bash
+
+# &#x20;  git clone https://github.com/aliusman-lab/SocialApp.git
+
+# &#x20;  ```
+
+# 
+
+# 2\. Open Android Studio.
+
+# 3\. Select \*\*Open\*\* and choose the cloned project folder.
+
+# 4\. Wait for Gradle synchronization to finish.
+
+# 5\. Run the app on an Android emulator or a connected device.
+
+# 
+
+# \## 📂 Project Structure
+
+# 
+
+# ```text
+
+# SocialApp/
+
+# ├── app/
+
+# │   └── src/
+
+# │       └── main/
+
+# │           ├── java/com/example/socialapp/
+
+# │           │   ├── MainActivity.java
+
+# │           │   ├── LoginActivity.java
+
+# │           │   └── SignupActivity.java
+
+# │           ├── res/
+
+# │           │   ├── layout/
+
+# │           │   └── drawable/
+
+# │           └── AndroidManifest.xml
+
+# └── README.md
+
+# ```
+
+# 
+
+# \*Note: The project structure may vary depending on the activities and resources included in your project.\*
+
+# 
+
+# \## 🔧 Current Status
+
+# 
+
+# The project includes the login interface and navigation to the sign-up screen. Authentication and social sign-in functionality may require additional implementation.
+
+# 
+
+# \## 👨‍💻 Developer
+
+# 
+
+# \*\*Ali Usman\*\*
+
+# 
+
+# \- GitHub: \[@aliusman-lab](https://github.com/aliusman-lab)
+
+# \- LinkedIn: \[Ali Usman](https://www.linkedin.com/in/aliusman-lab/)
+
+# 
+
+# \---
+
+# 
+
+# ⭐ If you find this project useful, consider giving it a star!
+
+
+
